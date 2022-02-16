@@ -1,0 +1,71 @@
+
+
+
+@font-face {
+    font-family:"LuxuriousRoman-Regular" ;
+    src: url(../fuente/LuxuriousRoman-Regular.ttf);
+} 
+@media(min-width: 1024px){ 
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    @font-face {
+        font-family:"LuxuriousRoman-Regular" ;
+        src: url(../fuente/LuxuriousRoman-Regular.ttf);
+    } 
+    html{
+        background-color: black;
+        color: white;
+        header{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        ul{
+            list-style-type: none;
+        }
+        a{
+            color: white;
+        }
+    }
+    nav{
+        ul{
+            li{
+                width: 25vh;
+                height: 5vh;
+                margin: 5% 5% 2% 3% ;
+                text-align: center;
+                font-size: 3vh;
+            }
+        }
+    } 
+    main{
+        font-size: 125%;
+        h2{
+            text-align: center;
+            margin: 5px 5px;
+            h4{
+                margin: 10px 10px;
+            }
+            p{
+                text-align: justify;
+                height: 20vh;
+                width: 50%;
+            }
+        }
+    }
+    article{
+        ul{
+            padding: 10px;
+            margin: 5px 5px
+        }
+    }
+
+@import "titulos";
+@import "imagenes";
+@import "grids";
+}
+
+@import "responsive-mobile";

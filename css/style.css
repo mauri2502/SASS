@@ -1,0 +1,592 @@
+/* esto es un comentario */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Fuente */
+@font-face {
+    font-family:"LuxuriousRoman-Regular" ;
+    src: url(../fuente/LuxuriousRoman-Regular.ttf);
+} 
+/* escritorio */
+@media(min-width: 1024px){
+    html{
+        background-color: black;
+        color:white; }
+
+body{ 
+    font-family: "LuxuriousRoman-Regular" ;
+    height: 100vh;
+} 
+header{
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
+/* listo de estilas */ 
+
+ul {
+    list-style-type: none  ;
+    
+}
+a{ 
+    color: white;
+} 
+.subrayado{
+    text-decoration: none ;
+}
+nav ul li{
+    width: 25vh;
+    height: 5vh;
+    margin: 5% 5% 2% 3% ;
+    text-align: center;
+    font-size: 3vh;
+    
+}
+.flexMenu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+} 
+
+/* Parte del encabezado de la pagina*/ 
+/* Animaciones y transiciones*/ 
+.transicion{
+    transition: all 2s;
+}
+
+.transicion:hover {
+
+    border: white solid 10px;
+
+}
+.moverTitulo{
+    transform: translateX(50vh);
+}
+
+.universot{
+
+    padding: 5%;
+}
+/* Clases */ 
+.tituloPrincipal{
+    font-size: 15vh; 
+    color: red;
+    text-align: center; 
+    margin: 5% 5%;
+}
+/* text aling es para alineacion de texto*/
+    
+
+
+main{
+    font-size: 125%; 
+} 
+h4{
+    margin: 10px 10px ;
+    
+}
+
+h2{
+    text-align: center;
+    margin: 5px 5px;
+}
+p{
+    text-align: justify;
+    height: 20vh;
+    width: 50%;
+} 
+
+
+.lanzamientos{
+    width: 70vh;
+}
+.tamañoDeImagen{
+    width: 50vh; 
+    transition: all 1s;
+}
+.tamañoDeImagen:hover{
+    border: red solid 15px;
+}
+/* juegos */
+.tamañoDeImagen1{
+    width: 51vh;
+    margin-bottom: 10%;
+    margin-right: 50%; 
+    transition: all 1s;
+
+
+}
+.tamañoDeImagen1:hover{
+    border: green solid 10px;
+}
+.tamañoDeImagen2{
+    width: 55vh;
+    margin-bottom: 17%;
+    margin-right: 59%;
+    margin-left: 50%; 
+    transition: all 1s;
+}
+.tamañoDeImagen2:hover{
+    border: blue solid 10px;
+}
+.h3Center{
+    text-align: center;
+    margin: 10px 5px 5px 12px;
+} 
+.titulo1{
+    color: blue;
+    transform: translateX(65vh);
+    font-size: 8.5vh; 
+    margin-top: 5%;
+    margin-bottom: 5%; }
+    
+    /* proximos lanzamientos */ 
+.lista{
+    color: white;
+    list-style: square;
+}
+article ul{
+    padding: 10px; 
+    margin: 5px 5px;
+    
+}
+
+/* centro de contactos */
+input{
+    margin: 5px 5px; 
+
+} 
+/* Redes sociales */
+.ig{
+    width: 53vh;
+    margin-bottom: 35px;
+}
+.distanciaDeImg{
+    margin-bottom: 35px;
+} 
+
+
+/* grids+flex+media */
+.grids1{
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr; 
+    grid-template-rows:  1fr ;
+    /* 2 columnas */
+    justify-content: center;
+    margin-top: 5%;
+    
+} 
+.grids2{
+    display: grid;
+    grid-template-columns: 2fr 5fr; 
+    grid-template-rows: 2fr 3fr 1fr;
+    /* 2 columnas */
+    justify-content: center;
+    margin-top: 2%;
+    margin-right: 50%;
+    margin-left: 70%;
+    
+}
+.grids{
+    display: grid;
+    grid-template-columns: 2fr; 
+    grid-template-rows: 2fr;
+    /* 2 columnas */
+    justify-content: center;
+    margin-top: 5%;
+    
+}
+.gridAreas{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "menu menu" 
+    "juegos juegos" 
+    "footer footer" ;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 2fr 1fr 3fr ;
+}
+
+
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: menu ;
+}
+footer{
+    grid-area: footer;
+}
+#productos{
+    grid-area: juegos;
+} 
+
+}
+
+
+
+
+/* tablet */
+/*@media (min-width: 481px) and (max-width: 1023px) {
+    body{
+        height: 100vh;
+        background-color: darkblue;
+        font-size: 3rem;
+        color: white
+    }
+}*/
+
+/* tablet de juegos */
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    html{
+        background-color: black;
+        color: white;
+    }
+    body{ 
+        font-family: "LuxuriousRoman-Regular" ;
+        height: 100vh; 
+    } 
+    header{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h1{
+        color: red;
+    } 
+    h2{
+        margin: 10px 5px;
+    }
+    h3{
+        margin: 5px 5px;
+    } 
+    h4{
+        margin: 6px 6px;
+    }
+    ul {
+        list-style-type: none  ;
+        
+    }
+    a{ 
+        color: white
+        } 
+        p{
+            text-align: justify;
+            height: 20vh;
+            width: 50%;
+        } 
+        
+        .centrarImg{
+            display: flex;
+            justify-content: center;
+        } 
+        .tamañoDeImagen{
+            width: 50vh;
+            transition: all 1s;
+        }
+        .tamañoDeImagen:hover{
+            border: red solid 15px;
+        }
+        .transicion{
+            transition: all 1s;
+        }
+        .transicion:hover {
+        
+            border: white solid 10px;}
+            
+
+    nav ul li{
+        width: 25vh;
+        height: 10px;
+        margin: 5% 5% 2% 10% ;
+        padding: 20px;
+        text-align: center;
+        font-size: 3vh; 
+        color: white; 
+
+        
+    }
+    .lanzamientos{
+        width: 70vh;
+    }
+    .flexMenu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    
+    } 
+    
+    /* Parte del encabezado de la pagina*/ 
+    
+    /* Clases */ 
+    .tituloPrincipal{
+        font-size: 8vh;
+        color: red; 
+        text-align: center; 
+        margin: 5% 5%;
+    /* text aling es para alineacion de texto*/
+        
+    
+    } 
+    main{
+        font-size: 125%;
+    } 
+
+    
+    
+    .tamañoDeImagen1{
+        width: 51vh;
+        margin-bottom: 5%;
+        transition: all 1s;
+    
+    } 
+.tamañoDeImagen1:hover{
+    border: green solid 10px;}
+
+    .tamañoDeImagen2{
+        width: 51vh;
+        margin-bottom: 5%; 
+        transition: all 1s;
+
+    } 
+    .tamañoDeImagen2:hover{
+        border: blue solid 10px;
+    }
+
+    .h3Center{
+        text-align: center;
+    } 
+    .titulo1{
+        color: blue;
+        text-align: center;
+        font-size: 7.5vh; 
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: nowrap; 
+    } 
+    /* grids+flex+media */
+    .grids{
+        display: grid;
+        grid-template-columns: 7fr; 
+        grid-template-rows: 2fr;
+        /* 2 columnas */
+        justify-content: space-evenly;
+        margin-top: 5%;
+        
+    } 
+    .grids1{
+        display: grid;
+        grid-template-columns: 3fr; 
+        grid-template-rows: 1fr;
+        /* 2 columnas */
+        justify-content: center;
+        margin-top: 5%;
+        
+    } 
+    .grids2{
+        display: grid;
+        grid-template-columns: 6fr; 
+        grid-template-rows:  1fr 1fr;
+        /* 2 columnas */
+        justify-content: center;
+        margin-top: 2%;
+        margin-right: 50%;
+        margin-left: 40%;}
+        
+    .gridAreas{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "menu" 
+        "juegos" 
+        "footer" ;
+        grid-template-columns: 3fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    h2{
+        font-size: 4vh;
+    }
+    p{
+        font-size: 1.1rem;
+        text-align: left;
+        margin: 5% 5%;
+    } 
+    .ig{
+        width: 53vh;
+        margin-bottom: 35px;}
+
+}
+@media (max-width:480px) {
+    html{
+        background-color: black;
+        color: white;
+    }
+    body{ 
+        font-family: "LuxuriousRoman-Regular" ;
+        height: 100vh; 
+    } 
+    header{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h1{
+        color: red;
+    }
+    ul {
+        list-style-type: none  ;
+        
+    }
+    a{ 
+        color: white
+        } 
+        p{
+            text-align: justify;
+            height: 20vh;
+            width: 50%;
+        } 
+        
+        .centrarImg{
+            display: flex;
+            justify-content: center;
+        } 
+        .tamañoDeImagen{
+            width: 40vh;
+            transition: all 1s;
+        }
+        .lanzamientos{
+            width: 70vh;
+            }
+            .tamañoDeImagen:hover{
+                border: red solid 15px;
+            }
+            .transicion{
+                transition: all 1s; 
+                width: 70vh;
+            }
+            .transicion:hover {
+            
+                border: white solid 5px;}
+
+    nav ul li{
+        width: 25vh;
+        height: 10px;
+        margin: 5% 5% 2% 10% ;
+        padding: 20px;
+        text-align: center;
+        font-size: 3vh; 
+        color: white; 
+
+        
+    }
+    .flexMenu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    
+    } 
+    
+    /* Parte del encabezado de la pagina*/ 
+    
+    /* Clases */ 
+    .tituloPrincipal{
+        font-size: 8vh;
+        color: red; 
+        text-align: center; 
+        margin: 5% 5%;
+    /* text aling es para alineacion de texto*/
+        
+    
+    } 
+    main{
+        font-size: 125%;
+    } 
+    
+    .tamañoDeImagen1{
+        width: 51vh;
+        margin-bottom: 5%;
+
+        transition: all 1s;
+    
+    } 
+    .tamañoDeImagen1:hover{
+        border: green solid 10px;}
+    .tamañoDeImagen2{
+        width: 51vh;
+        margin-bottom: 5%;
+
+        transition: all 1s;
+    } 
+    .tamañoDeImagen2:hover{
+        border: blue solid 10px;
+    }
+
+    .h3Center{
+        text-align: center;
+    } 
+    .titulo1{
+        color: blue;
+        text-align: center;
+        font-size: 7vh; 
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: nowrap; 
+    } 
+    /* grids+flex+media */
+    .grids{
+        display: grid;
+        grid-template-columns: 7fr; 
+        grid-template-rows: 2fr;
+        /* 2 columnas */
+        justify-content: space-evenly;
+        margin-top: 5%;
+        
+    } 
+    .grids1{
+        display: grid;
+        grid-template-columns: 3fr; 
+        grid-template-rows: 1fr;
+        /* 2 columnas */
+        justify-content: center;
+        margin-top: 5%;
+        
+    } 
+    .grids2{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows:  1fr;
+        /* 2 columnas */
+        justify-content: center;
+        margin-top: 2%;
+        margin-right: 50%;
+        margin-left: 40% }
+        
+    .gridAreas{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "menu" 
+        "juegos" 
+        "footer" ;
+        grid-template-columns: 3fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    h2{
+        font-size: 4vh;
+    }
+    p{
+        font-size: 1.1rem;
+        text-align: left;
+        margin: 5% 5%;
+    } 
+    .ig{
+        width: 53vh;
+        margin-bottom: 35px;}
+}

@@ -1,0 +1,47 @@
+.transicion{
+    transition: all 2s;
+}
+.transicion:hover {
+
+    border: white solid 10px;
+
+}
+.lanzamientos{
+    width: 70vh;
+} 
+.tamañoDeImagen{
+    width: 50vh; 
+    transition: all 1s;
+}
+.tamañoDeImagen:hover{
+    border: red solid 15px;
+}
+/* juegos */
+.tamañoDeImagen1{
+    width: 51vh;
+    margin-bottom: 10%;
+    margin-right: 50%; 
+    transition: all 1s;
+
+
+}
+.tamañoDeImagen1:hover{
+    border: green solid 10px;
+}
+.tamañoDeImagen2{
+    width: 55vh;
+    margin-bottom: 17%;
+    margin-right: 59%;
+    margin-left: 50%; 
+    transition: all 1s;
+}
+.tamañoDeImagen2:hover{
+    border: blue solid 10px;
+} 
+.ig{
+    width: 53vh;
+    margin-bottom: 35px;
+} 
+.distanciaDeImg{
+    margin-bottom: 35px;
+} 

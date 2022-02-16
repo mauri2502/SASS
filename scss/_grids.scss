@@ -1,0 +1,54 @@
+.grids{
+    display: grid;
+    grid-template-columns: 2fr; 
+    grid-template-rows: 2fr;
+    /* 2 columnas */
+    justify-content: center;
+    margin-top: 5%;
+    
+}
+.grids1{
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr; 
+    grid-template-rows:  1fr ;
+    /* 2 columnas */
+    justify-content: center;
+    margin-top: 5%;
+}
+    .grids2{
+        display: grid;
+        grid-template-columns: 2fr 5fr; 
+        grid-template-rows: 2fr 3fr 1fr;
+        /* 2 columnas */
+        justify-content: center;
+        margin-top: 2%;
+        margin-right: 50%;
+        margin-left: 70%;
+        
+    } 
+    .gridAreas{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "menu menu" 
+        "juegos juegos" 
+        "footer footer" ;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 2fr 1fr 3fr ;
+    }
+    
+    
+    
+    header{
+        grid-area: header;
+    }
+    nav{
+        grid-area: menu ;
+    }
+    footer{
+        grid-area: footer;
+    }
+    #productos{
+        grid-area: juegos;
+    } 
+    

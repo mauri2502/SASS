@@ -1,0 +1,35 @@
+.moverTitulo{
+    transform: translateX(50vh);
+}
+.tituloPrincipal{
+    font-size: 15vh; 
+    color: red;
+    text-align: center; 
+    margin: 5% 5%;
+}
+.titulo1{
+    color: blue;
+    transform: translateX(65vh);
+    font-size: 8.5vh; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+    .h3Center{
+        text-align: center;
+        margin: 10px 5px 5px 12px;
+    } 
+    .flexMenu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    
+    } 
+    .lista{
+        color: white;
+        list-style: square;
+    }
+        input{
+            margin: 5px 5px; 
+        
+        } 
